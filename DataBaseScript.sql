@@ -7,6 +7,17 @@ DROP TABLE "Orders";
 DROP TABLE "Shippings";
 
 ------------------------------------------------
+-- DELETE NEW TABLES IF EXIST
+------------------------------------------------
+
+DROP TABLE IF EXISTS "LoanClient";
+DROP TABLE IF EXISTS "Transaction";
+DROP TABLE IF EXISTS "TypeTransaction";
+DROP TABLE IF EXISTS "Account";
+DROP TABLE IF EXISTS "Client";
+DROP TABLE IF EXISTS "Loan";
+
+------------------------------------------------
 -- TABLES CREATION 
 ------------------------------------------------
 
@@ -55,4 +66,3 @@ CREATE TABLE "Transaction"(
 PRIMARY KEY ("idTransaction"),
 FOREIGN KEY ("idType") REFERENCES "TypeTransaction"("idType"),
 FOREIGN KEY ("idAccount") REFERENCES "Account"("idAccount"));
-

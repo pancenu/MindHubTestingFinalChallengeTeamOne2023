@@ -21,7 +21,7 @@ CREATE TABLE "Client"(
 "idClient" int NOT NULL,
 "firstname" varchar(50) NOT NULL,
 "lastName" varchar(50) NOT NULL,
-"email" varchar(50 NOT NULL),
+"email" varchar(50) NOT NULL,
 PRIMARY KEY ("idClient"));
 
 CREATE TABLE "LoanClient"(

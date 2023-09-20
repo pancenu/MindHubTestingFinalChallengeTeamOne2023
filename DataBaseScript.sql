@@ -50,7 +50,7 @@ CREATE TABLE "Account"(
 "number" varchar(20) NOT NULL,
 "creationDate" varchar(20) NOT NULL,
 "balance" int NOT NULL,
-);
+PRIMARY KEY ("idAccount"));
 
 CREATE TABLE "TypeTransaction"(
 "idType" int NOT NULL,

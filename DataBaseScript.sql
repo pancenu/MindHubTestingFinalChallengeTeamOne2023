@@ -41,7 +41,7 @@ CREATE TABLE "LoanClient"(
 "idLoan" int NOT NULL,
 "amount" int NOT NULL,
 "payments" int NOT NULL,
-PRIMARY KEY ("idLoanClients"),
+PRIMARY KEY ("idLoanClient"),
 FOREIGN KEY ("idLoan") REFERENCES "Loan"("idLoan"),
 FOREIGN KEY ("idClient") REFERENCES "Client"("idClient")); 
 

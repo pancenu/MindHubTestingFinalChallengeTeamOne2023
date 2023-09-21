@@ -58,7 +58,7 @@ CREATE TABLE "Account" (
     FOREIGN KEY ("idClient") REFERENCES "Client"("idClient")
 );
 
-CREATE TABLE "TypeTransaction" (
+CREATE TABLE "Type" (
     "idType" int NOT NULL,
     "type" varchar(8),
     PRIMARY KEY ("idType")
@@ -72,6 +72,6 @@ CREATE TABLE "Transaction" (
     "date" varchar(20) NOT NULL,
     "description" varchar(50) NOT NULL,
     PRIMARY KEY ("idTransaction"),
-    FOREIGN KEY ("idType") REFERENCES "TypeTransaction"("idType"),
+    FOREIGN KEY ("idType") REFERENCES "Type"("idType"),
     FOREIGN KEY ("idAccount") REFERENCES "Account"("idAccount")
 );
